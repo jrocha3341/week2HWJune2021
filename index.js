@@ -27,7 +27,7 @@ const backSlide = function (){
     const imageSliderJavaScript = document.getElementById('imageSliderJavaScript');
     position +=300;
 
-    if (position < 0) {
+    if (position <= 0) {
         
         imageSliderJavaScript.style.transform = `translateX(${position}px)`;
         
