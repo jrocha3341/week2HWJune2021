@@ -1,0 +1,58 @@
+img{
+    width: 300px;
+    height: auto; /*    auto, till I fix the issue*/
+}
+
+body{
+    background-color: bisque;
+    
+}
+
+h2{
+    color: rgb(61, 13, 192);
+    text-align: center;
+    border-bottom: darkblue;
+    padding: 10px;
+
+}
+
+#window {
+    border: 2px;
+    width: 300px;
+    border-style: dashed;
+    margin: 1px auto;
+    overflow: hidden;
+}
+
+#imageSlider {
+    display: flex;
+    transform: translateX(-000px);
+    animation: slideAnimation 16s linear infinite;
+    animation-delay: 3s;
+}
+
+#columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center
+    
+}
+
+#imageSliderJavaScript {
+    display: flex;
+    transform: translateX(-000px);
+
+}
+
+
+@keyframes slideAnimation {
+    0%{
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(-1500px);
+
+    }
+}
